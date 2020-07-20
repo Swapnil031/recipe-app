@@ -11,6 +11,13 @@ class App extends React.Component {
     recipes: [],
     trivia: ''
   }
+
+  getRandomRecipe = async () => {
+    const api_call = await fetch(`https://api.spoonacular.com/recipes/search?apiKey=${API_KEY}&number=9`);
+    
+    const data = await api_call.json();
+    this.setState({ recipes: data.results });
+  }
   
   getRecipe = async (e) => {
     const recipeName = e.target.elements.recipeName.value;
@@ -20,7 +27,7 @@ class App extends React.Component {
     
     const data = await api_call.json();
     this.setState({ recipes: data.results });
-    console.log(this.state.recipes);
+    //console.log(this.state.recipes);
   }
 
   getTrivia = async () => {
@@ -28,23 +35,14 @@ class App extends React.Component {
     
     const data = await api_call.json();
 
-    this.setState({ trivia: data.message }); 
-    // change 'message' to 'text' to get joke --- quota exceeded 
+    this.setState({ trivia: data.text });  
   }
 
-  componentDidMount = () => {
-    const json = ( localStorage.getItem("recipes") ? localStorage.getItem("recipes") : [] );
-    const recipes = JSON.parse(json);
-    this.setState({ recipes: recipes });  
-    
+  componentDidMount = () => {    
+    this.getRandomRecipe();
     this.getTrivia();
   }
-
-  componentDidUpdate = () => {
-    const recipes = JSON.stringify(this.state.recipes);
-    localStorage.setItem("recipes", recipes);
-  }
-  
+    
   render() {
 
 	return (
