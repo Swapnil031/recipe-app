@@ -31,7 +31,7 @@ class App extends React.Component {
   }
 
   getTrivia = async () => {
-    const api_call = await fetch(`https://api.spoonacular.com/food/jokes/random?apiKey=${API_KEY}`);
+    const api_call = await fetch(`https://api.spoonacular.com/food/trivia/random?apiKey=${API_KEY}`);
     
     const data = await api_call.json();
 

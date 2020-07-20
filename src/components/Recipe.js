@@ -22,16 +22,8 @@ class Recipe extends React.Component {
   render() {
 	
 	const recipe = this.state.activeRecipe ;
-	
-	if (recipe.id > 0 ) {
-	  return(
-		<div className="container">
-		  <p>No such recipe found !!</p>
-		</div>
-	  );
-	}
-	else{
-	  return (
+
+	 return (
 		<div className="container">
 		{	
 			recipe.length !== 0 && 		
@@ -46,8 +38,7 @@ class Recipe extends React.Component {
 			</div>		
 		}
 		</div>
-	  );
-	}
+	 );
   }  
 };
 
