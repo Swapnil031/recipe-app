@@ -2,18 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const IMAGE_URL = "https://spoonacular.com/recipeImages/";
-const API_KEY = "b808aac38d1f43e28f1106714813a023";
-
-/*
-const getInfo = async (recipe) => {
-  const data = await fetch(`https://api.spoonacular.com/recipes/${recipe.id}/information?apiKey=${API_KEY}`);
-    
-  const recipeInfo = await data.json();
-  console.log(recipeInfo);
-  return recipeInfo;
-}
-*/
-
 
 const Recipes = (props) => (
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+require('dotenv').config();
 
-const IMAGE_URL = "https://spoonacular.com/recipeImages/";
-const API_KEY = "b808aac38d1f43e28f1106714813a023";
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 class Recipe extends React.Component {
   state = {

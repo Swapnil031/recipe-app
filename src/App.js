@@ -2,8 +2,9 @@ import React from 'react';
 import './App.css';
 import Form from './components/Form'
 import Recipes from './components/Recipes';
+require('dotenv').config();
 
-const API_KEY = "b808aac38d1f43e28f1106714813a023";
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 class App extends React.Component {
 
