@@ -1,6 +1,8 @@
-## Recipe World | Search for recipes
+## Recipe World
 
-<U><a href="https://swapnil031.github.io/recipe-app/">Live Demo - Recipe-App</a></U>
+### Search for recipes using keywords
+
+<B><a href="https://swapnil031.github.io/recipe-app/">Live Demo - Recipe-App</a></B>
 
 This is a web-app developed in ReactJS which allows searching for delicious recipes using keywords. It also shows an interesting food-fact everytime we refresh the page.
 
