@@ -2,7 +2,7 @@
 
 ### Search for recipes using keywords
 
-*[Live Demo - Recipe-App](https://swapnil031.github.io/recipe-app/)*
+**[Live Demo - Recipe-App](https://swapnil031.github.io/recipe-app/)**
 
 This is a web-app developed in ReactJS which allows searching for delicious recipes using keywords. It also shows an interesting food-fact everytime we refresh the page.
 
@@ -10,6 +10,6 @@ Here, the concept of `router` in React is used to setup routing for the app. The
 
 As a beginner, I undertook and completed this project to gain a strong understanding of React router and the use of hooks.
 
-Youtube video ref. - https://youtu.be/PbJt7-a2274
+*Youtube video ref. - https://youtu.be/PbJt7-a2274*
 
-API used - https://spoonacular.com/food-api/
+*API used - https://spoonacular.com/food-api/*
