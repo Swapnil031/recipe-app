@@ -1,4 +1,4 @@
-## Recipe World
+# Recipe World
 
 ### Search for recipes using keywords
 
