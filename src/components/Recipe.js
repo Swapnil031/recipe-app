@@ -28,7 +28,7 @@ class Recipe extends React.Component {
 		{	
 			recipe.length !== 0 && 		
 			<div className="active-recipe">
-			  <img className="active-recipe__img" src={ recipe.image } />
+			  <img className="active-recipe__img" src={ recipe.image } alt="Recipe"/>
 			  <h3 className="active-recipe__title">{ recipe.title }</h3>
 			  <p className='active-recipe__website'>SOURCE: <a href={ recipe.sourceUrl }>{ recipe.sourceName }</a></p>
 			  <button className="active-recipe__button">
